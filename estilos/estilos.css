@@ -13,7 +13,7 @@ body {
 main {
     background-color: white;
     width: 380px;
-    height: 100vh;
+    height: 112vh;
     margin: auto;
 }
 
@@ -70,17 +70,19 @@ section#inferior {
     padding: 25px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+section#inferior > h4 {
+    font-size: 1.2em;
+    padding: 10px 10px 30px 10px;
 }
 
-td {
-    background-color: rgba(255, 179, 37, 0.541);
+div.dados {
+    background-color: rgba(222, 184, 135, 0.226);
+    font-size: 1.2em;
+    margin-bottom: 10px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
-td.dados {
-    text-align: right;
+img {
+    padding-right: 10px;
 }
