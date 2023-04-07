@@ -13,11 +13,12 @@ body {
 main {
     background-color: white;
     width: 380px;
-    height: 112vh;
+    height: 100%;
     margin: auto;
+    border-radius: 30px;
 }
 
-section#superior {
+div#superior {
     background-image: linear-gradient(to bottom, rgb(68, 84, 235), rgb(27, 27, 255));
     color: white;
     width: 100%;
@@ -27,12 +28,13 @@ section#superior {
     border-radius: 0px 0px 30px 30px;
 }
 
-section#superior > h4 {
+div#superior > h4 {
+    display: block;
     padding-top: 15px;
     padding-bottom: 20px;
 }
 
-section#superior > div#circulo {
+div#superior > div#circulo {
     background-image: linear-gradient(to top, rgb(75, 10, 255), rgb(55, 0, 255));
     width: 120px;
     height: 120px;
@@ -40,16 +42,16 @@ section#superior > div#circulo {
     border-radius: 50%;
 }
 
-section#superior > div#circulo > h1 {
+div#superior > div#circulo > h1 {
     font-size: 3.2em;
     padding-top: 20px;
 }
 
-section#superior > h1 {
+div#superior > h1 {
     padding-top: 20px;
 }
 
-section#superior > h4, div#circulo > p, p#informacao {
+div#superior > h4, div#circulo > p, p#informacao {
     color: rgb(167, 176, 255);
 }
 
@@ -58,7 +60,7 @@ div#circulo > p {
     font-weight: bolder;
 }
 
-section#superior > p#informacao {
+div#superior > p#informacao {
     font-size: 0.9em;
     font-weight: bolder;
     width: 250px;
@@ -66,13 +68,25 @@ section#superior > p#informacao {
     padding-top: 10px;
 }
 
-section#inferior {
+div#inferior {
+    display: block;
     padding: 25px;
 }
 
-section#inferior > h4 {
+div#inferior > h4 {
     font-size: 1.2em;
     padding: 10px 10px 30px 10px;
+}
+
+div#inferior > input {
+    background-color: rgb(32, 26, 56);
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
 }
 
 div.dados {
@@ -85,4 +99,13 @@ div.dados {
 
 img {
     padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer > p > a {
+    text-decoration: none;
 }
